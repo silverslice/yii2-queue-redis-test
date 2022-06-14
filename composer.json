@@ -1,7 +1,7 @@
 {
-    "name": "yiisoft/yii2-app-basic",
-    "description": "Yii 2 Basic Project Template",
-    "keywords": ["yii2", "framework", "basic", "project template"],
+    "name": "yiisoft/yii2-queue-redis-test",
+    "description": "Yii 2 queue redis example",
+    "keywords": ["yii2", "queue", "redis"],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
     "license": "BSD-3-Clause",
