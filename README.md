@@ -18,13 +18,13 @@ make init
 Start 4 queue workers:
 
 ```sh
-make up
+make up queue=4
 ```
 
 Send 6 test messages (in the second terminal session):
 
 ```sh
-make send
+make send count=6
 ```
 
 Go to the first terminal session and check queue worker output.
@@ -36,5 +36,3 @@ Stop and remove containers after tests:
 ```sh
 make clean
 ```
-
-Copy commands from `Makefile` and run them directly to adjust the number of workers and messages.
