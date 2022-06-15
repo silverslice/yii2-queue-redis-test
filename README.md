@@ -1,14 +1,15 @@
 # Yii 2 queue redis docker example
 
-TestJob executes 2 seconds and creates file named as current time with microseconds in `runtime/message` directory.
+TestJob executes for 2 seconds and creates file named as current time with microseconds in `runtime/message` directory.
 
 Clone repository:
 
 ```sh
 git clone git@github.com:silverslice/yii2-queue-redis-test.git
+cd yii2-queue-redis-test
 ```
 
-Build docker images:
+Build docker images and run composer install:
 
 ```sh
 make init
@@ -35,3 +36,5 @@ Stop and remove containers after tests:
 ```sh
 make clean
 ```
+
+Copy commands from `Makefile` and run them directly to adjust the number of workers and messages.
