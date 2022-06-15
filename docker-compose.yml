@@ -17,6 +17,7 @@ services:
       - php
       - yii
       - queue/listen
+      - '5'
       - --verbose
     build:
       context: ./docker/php
