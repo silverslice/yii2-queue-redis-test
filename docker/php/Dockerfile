@@ -1,12 +1,6 @@
-FROM php:8.0-cli
+FROM php:8.1-cli-alpine
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-        git \
-        zlib1g-dev \
-        libxml2-dev \
-        libzip-dev \
-    && docker-php-ext-install \
-        zip
+RUN apk add --no-cache git unzip bash coreutils
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/bin --filename=composer --quiet
 
